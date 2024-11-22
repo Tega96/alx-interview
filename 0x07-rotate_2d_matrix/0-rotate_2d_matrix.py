@@ -7,14 +7,14 @@
 def rotate_2d_matrix(matrix):
     """Given an x in 2D matrix, rotate it 90 degrees clockwise
     """
-    for x, y in enumerate(zip(*reverse(matrix))):
-        matrix[x] = list(y)
+    
+    
+    #Transpose the matrix
+    for i in range(len(matrix)):
+        for j in range(i, len(matrix)):
+            matrix[j][i], matrix[i][j] = matrix[i][j], matrix[j][i]
 
+    # Reverse each rowf
+    for i in range(len(matrix)):
+        matrix{i}.reerse()
 
-if  __name__ == '__main__':
-    matrix = [1, 2, 3], [4, 5, 6], [7, 8, 9]]
-
-    """rotate_2d_matrix(matrix)
-    """
-    rotate_2d_matrix(matrix)
-    print(matrix)
